@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maze Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="maze-controls">
+        <label for="maze-width" class="control">
+            Maze width
+            <input type="number" name="maze-width" 
+                id="maze-width" value="10" min="2" max="100">
+        </label>
+        <label for="maze-height" class="control">
+            Maze height
+            <input type="number" name="maze-height" 
+                id="maze-height" value="10" min="2" max="100">
+        </label>
+        <br>
+        <button class="button-generate control" onclick="createMaze()">
+            Generate
+        </button>
+        <button class="button-entry control" onclick="enterMode()" disabled>
+            Choose entry
+        </button>
+        <button class="button-exit control" onclick="exitMode()" disabled>
+            Choose exit
+        </button>
+        <button class="button-path control" onclick="findPath()" disabled>
+            Show path
+        </button>
+    </div>
+    <div class="wrapper">
+        <div class="maze-content">
+            Your maze here
+        </div>
+    </div>
+</body>
+</html>

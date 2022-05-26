@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.maze-controls {
+    border-bottom: 2px solid rgb(2, 43, 133);
+    background: rgb(174, 252, 252);
+    padding: 5px;
+    text-align: center;
+}
+.control {
+    margin: 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button.control {
+    padding: 10px;
+}
+.wrapper {
+    margin-top: 20px;
+    padding: 10px;
+    overflow-x: auto;
+}
+.maze-content{
+    width: fit-content;
+    height: fit-content;
+    min-width: 50px;
+    min-height: 50px;
+    --cell-size: 25px;
+    margin: auto;
+    outline: 5px solid black;
+}
+.maze-row {
+    height: var(--cell-size);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.maze-cell {
+    box-sizing: border-box;
+    min-width: var(--cell-size);
+    min-height: var(--cell-size);
+    display: inline-block;
+}
